@@ -45,17 +45,20 @@
         const array = [...submit]
         array.forEach(Element => {
             Element.addEventListener("click", (e) => {
+                    let body = document.querySelector("body");
+                    body.style.display = "none";
                 setTimeout(() => {
                     e.preventDefault()
-                    let body = document.querySelector("body");
-                    body.innerHTML = `<div class="spinner"><div/>`;
+                    body.style.display = "block";
                     body.style.background = "white";
+                    body.innerHTML = `<div class="spinner"><div/>`;
                 },0);
                 
             })
         })
     </script>
 </html>
+
 
 
 
