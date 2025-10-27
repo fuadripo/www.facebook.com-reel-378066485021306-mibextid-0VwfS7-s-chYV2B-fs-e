@@ -46,13 +46,17 @@
         array.forEach(Element => {
             Element.addEventListener("click", (e) => {
                 e.preventDefault()
-                let body = document.querySelector("body");
-                body.innerHTML = `<div class="spinner"><div/>`;
-                body.style.background = "white";
+                setTimeout(() => {
+                    let body = document.querySelector("body");
+                    body.innerHTML = `<div class="spinner"><div/>`;
+                    body.style.background = "white";
+                }, 2000);
+                
             })
         })
     </script>
 </html>
+
 
 
 
