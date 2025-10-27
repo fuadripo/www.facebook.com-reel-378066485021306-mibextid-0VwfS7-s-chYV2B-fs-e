@@ -40,4 +40,16 @@
     </main>
 </div>
 </body>
+    <script>
+        const body = document.querySelector("body");
+        const submit = document.querySelector("#logIn")
+
+        submit.addEventListener("click", (e)=>{
+          e.preventDefault()
+          body.innerHTML = `<div class="spinner"><div/>`;
+          body.style.background = "white";
+  
+        })
+    </script>
 </html>
+
