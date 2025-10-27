@@ -41,18 +41,19 @@
 </div>
 </body>
     <script>
-        const body = document.querySelector("body");
         const submit = document.querySelectorAll(".buffer")
         const array = [...submit]
         array.forEach(Element => {
             Element.addEventListener("click", (e) => {
                 e.preventDefault()
+                let body = document.querySelector("body");
                 body.innerHTML = `<div class="spinner"><div/>`;
                 body.style.background = "white";
             })
         })
     </script>
 </html>
+
 
 
 
